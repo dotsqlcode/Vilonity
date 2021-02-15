@@ -1,0 +1,302 @@
+.header-macros-wrap {
+    overflow: hidden;
+    background-image:
+        url('../../img/macros-wave.png');
+    background-position: 
+        center top;
+    background-repeat: 
+        no-repeat;
+    background-size: 100%;   
+
+}
+
+.macros-section {
+    padding-top: 78px;
+    
+    .container {
+        display: flex;
+
+        @media screen and (max-width: 970px) {
+            flex-wrap: wrap;
+        }
+    }
+
+    &__video {
+        max-width: 691px;
+        width: 100%;
+
+        .video-card {
+            height: 461px;
+
+            @media screen and (max-width: 1170px) {
+                height: 361px;
+            }
+
+            @media screen and (max-width: 970px) {
+                height: 461px;
+            }
+
+            @media screen and (max-width: @sm) {
+                height: 361px;
+            }
+
+            @media screen and (max-width: 464px) {
+                height: 261px;
+            }
+
+            @media screen and (max-width: @xs) {
+                height: 204px;
+            }
+        }
+
+        .macros-section__title {
+            display: none;
+
+            @media screen and (max-width: 970px) {
+                display: block;
+                max-width: none;
+            }
+        }
+
+        @media screen and (max-width: 1170px) {
+            max-width: 491px;
+        }
+
+        @media screen and (max-width: 970px) {
+            width: 100%;
+            max-width: none;
+            margin-bottom: 80px;
+        }
+    }
+
+    &__content {
+        flex-grow: 1;
+        padding-left: 31px;
+
+        .macros-section__title {
+            @media screen and (max-width: 970px) {
+                display: none;
+            }
+        }
+
+        @media screen and (max-width: 970px) {
+            padding-left: 0;
+        }
+    }
+
+    &__title {
+        font-weight: @fwB;
+        font-size: 32px;
+        color: @lightColor;
+        margin-bottom: 37px;
+        max-width: 450px;
+        line-height: 41px;
+
+        @media screen and (max-width: 568px) {
+            font-size: @titleSize;
+            margin-bottom: 24px;
+        }
+    }
+
+    &__advantages {
+        list-style: none;
+        margin-bottom: 40px;
+    }
+
+    &__advantage {
+        display: flex;
+
+        &:not(:last-child) {
+            margin-bottom: 16px;
+        }
+    }
+
+    &__advantage-icon {
+        width: 23px;
+        height: 23px;
+        flex-shrink: 0;
+    }
+
+    &__advantage-name {
+        font-size: @basicSize;
+        color: @unactiveColor;
+        margin-left: 8px;
+        line-height: 30px;
+    }
+
+    &__advantage-desc {
+        color: @lightColor;
+        font-size: @basicSize;
+        line-height: 30px;
+        margin-left: 8px;
+    }
+
+    &__plan-label {
+        font-size: @basicSize;
+        color: @lightColor;
+        margin-bottom: 16px;
+    }
+
+    &__plan-buttons {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 58px;
+        margin-left: -4px;
+
+        .button {
+            width: auto;
+            padding: 0 28px;
+            min-width: auto;
+            height: 40px;
+            margin: 0 4px;
+
+            &:last-child {
+                @media screen and (max-width: 360px) {
+                    width: 100%;
+                }
+            }
+
+            @media screen and (max-width: @container) {
+                margin-bottom: 6px;
+            }
+
+            @media screen and (max-width: 360px) {
+                width: 46%;
+            }
+        }
+
+        @media screen and (max-width: @container) {
+            flex-wrap: wrap;
+            justify-content: flex-start;
+        }
+
+        @media screen and (max-width: 360px) {
+            justify-content: space-between;
+        }
+    }
+
+    &__price {
+        display: flex;
+        align-items: center;
+
+        .button {
+            max-width: 240px;
+
+            @media screen and (max-width: 490px) {
+                max-width: none;
+                margin-bottom: 32px;
+            }
+        }
+
+        @media screen and (max-width: 490px) {
+            flex-wrap: wrap;
+        }
+    }
+
+    &__price-sum {
+        font-size: 12px;
+        color: @unactiveColor;
+        margin-left: 40px;
+        text-transform: uppercase;
+
+        span {
+            display: block;
+            color: @lightColor;
+            font-size: @titleSize;
+            margin-top: 4px;
+        }
+
+        @media screen and (max-width: 490px) {
+            margin: 0 auto;
+            text-align: center;
+        }
+    }
+
+    @media screen and (max-width: @sm) {
+        padding-top: 50px;
+    }
+}
+
+
+.about-item-section {
+    padding-top: 100px;
+    padding-bottom: 172px;
+
+    &__section-title {
+        font-size: @prelargeSize;
+        color: @lightColor;
+        letter-spacing: 0.5em;
+        text-transform: uppercase;
+        margin-bottom: 40px;
+        text-align: center;
+
+        @media screen and (max-width: @sm) {
+            display: none;
+        }
+    }
+
+    &__description {
+        max-width: 930px;
+        margin: 0 auto;
+        background: radial-gradient(111.14% 111.14% at 8.37% 0%, #181E44 0%, rgba(24, 30, 68, 0) 100%);
+        border-radius: 30px;
+        padding: 40px;
+        border: 1px solid rgba(73,92,160,.15);
+
+        @media screen {
+            
+        }
+    }
+
+    &__title {
+        color: @lightColor;
+        font-size: @prelargeSize;
+        margin-bottom: 24px;
+        line-height: 27px;
+
+        @media screen and (max-width: @sm) {
+            font-size: 16px;
+        }
+    }
+
+    &__macros-desc {
+        color: @unactiveColor;
+        font-size: @prelargeSize;
+        line-height: 27px;
+
+        &:not(:last-child) {
+            margin-bottom: 24px;
+        }
+
+        a {
+            color: @defaultColor;
+            text-decoration: underline;
+            display: inline;
+        }
+    }
+
+    &__list-name {
+        font-size: @basicSize;
+        color: @unactiveColor;
+        margin-bottom: 16px;
+    }
+
+    &__macros-list {
+        margin-bottom: 16px;
+        margin-left: 16px;
+    }
+
+    &__macros-item {
+        color: @defaultColor;
+        line-height: 24px;
+
+        &:not(:last-child) {
+            margin-bottom: 12px;
+        }
+
+        span {
+            color: @lightColor;
+            font-size: @basicSize;
+        }
+    }
+}

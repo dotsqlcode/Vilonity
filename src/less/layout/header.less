@@ -1,0 +1,96 @@
+.header {
+    padding-top: 22px;
+    position: relative;
+
+    .container {
+        display: flex;
+        align-items: center;
+
+        @media screen and (max-width: @md) {
+            justify-content: space-between;
+        }
+
+        @media screen and (max-width: @xs) {
+            justify-content: unset;
+        }
+    }
+
+    .lang-switch {
+        margin-left: 30px;
+
+        @media screen and (max-width: @md) {
+            display: none;
+        }
+    }
+
+    .social-media {
+        margin-left: 38px;
+        margin-top: 2px;
+
+        @media screen and (max-width: @md) {
+            display: none;
+        }
+    }
+
+    .logo {
+        margin-left: 138px;
+        margin-top: 6px;
+
+        &__image {
+            @media screen and (max-width: @md) {
+                width: 68px;
+                height: 100px;
+            }
+
+            @media screen and (max-width: @sm) {
+                width: 58px;
+                height: 74px;
+            }
+        }
+
+        @media screen and (max-width: @md) {
+            margin: 0;
+            align-self: center;
+        }
+
+        @media screen and (max-width: @xs) {
+            margin-left: 82px
+        }
+    }
+
+    .nav {
+        @media screen and (max-width: @md) {
+            display: none;
+        }
+    }
+
+    &__button {
+        margin-left: auto;
+        margin-bottom: 4px;
+
+        @media screen and (max-width: @md) {
+            display: none;
+        }
+    }
+
+    .nav-mobile {
+        display: none;
+        @media screen and (max-width: @md) {
+            display: block;
+        }
+
+        &__burger {
+            @media screen and (max-width: @xs) {
+                margin-left: 10px;
+            }
+        }
+
+        .logo {
+            @media screen and (max-width: @xs) {
+                margin-left: 0;
+            }
+        }
+    }
+
+    
+}

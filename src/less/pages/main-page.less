@@ -1,0 +1,319 @@
+.header-info-wrap {
+    background-image:
+        url('../../img/headerwave-bottom.png');
+    background-position: 
+        center top;
+    background-repeat: 
+        no-repeat;
+    background-size: 100%; 
+
+    @media screen and (max-width: @xs) {
+        background-image: url('../../img/headerwave-bottom-mobile.png');
+    }
+
+}
+
+.main {
+    position: relative;
+    &__shadow {
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-image: url('../../img/shadow.png');
+        width: 1920px;
+        height: 1983px;
+        pointer-events: none;
+
+        @media screen and (max-width: @md) {
+            display: none;
+        }
+    }
+}
+
+.info-section {
+    padding-top: 149px;
+    position: relative;
+
+    &__details {
+        margin-bottom: 474px;
+
+        @media screen and (max-width: @container) {
+            margin-bottom: 200px;
+        }
+
+        @media screen and (max-width: @md) {
+            margin-bottom: 109px;
+        }
+
+        @media screen and (max-width: @xs) {
+            margin-bottom: 198px;
+        }
+    }
+
+    &__title {
+        font-weight: @fwEB;
+        color: @defaultColor;
+        font-size: 60px;
+        margin-bottom: 20px;
+
+        @media screen and (max-width: @xs) {
+            font-size: 40px;
+            margin-bottom: 16px;
+        }
+    }
+
+    &__sub-title {
+        font-weight: @fwB;
+        color: @lightColor;
+        font-size: @largeSize;
+        margin-bottom: 30px;
+
+        @media screen and (max-width: @xs) {
+            font-size: @basicSize;
+            margin-bottom: 16px;
+        }
+    }
+
+    &__description {
+        color: @unactiveColor;
+        font-size: @basicSize;
+        line-height: 23px;
+        margin-bottom: 40px;
+
+        br {
+            @media screen and (max-width: @sm) {
+                display: none;
+            }
+        }
+
+        @media screen and (max-width: @xs) {
+            font-size: 14px;
+            margin-bottom: 17px;
+        }
+    }
+
+    &__buttons {
+        display: flex;
+
+        @media screen and (max-width: @sm) {
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+
+        .button {
+            &:first-child {
+                max-width: 238px;
+
+                @media screen and (max-width: @sm) {
+                    max-width: none;
+                    margin-bottom: 16px;
+                }
+            }
+
+            &:last-child {
+                max-width: 289px;
+                margin-left: 33px;
+
+                @media screen and (max-width: @sm) {
+                    max-width: none;
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+
+    //solders
+
+    &__solders {
+        position: absolute;
+        right: -10px;
+        top: -162px;
+        pointer-events: none;
+
+        img {
+            &:first-child {
+                width: 1180px;
+                height: 1035px;
+                position: absolute;
+                right: 40px;
+                top: 50px;
+
+                @media screen and (max-width: @xl) {
+                    width: 980px;
+                    height: 835px;
+                }
+
+                @media screen and (max-width: @md) {
+                    display: none;
+                }
+            }
+        }
+
+        @media screen and (max-width: @xxl) {
+            right: -254px;
+        }
+
+        @media screen and (max-width: @xl) {
+            top: -80px;
+        }
+
+    }
+
+    @media screen and (max-width: @sm) {
+        padding-top: 50px;
+    }
+
+    @media screen and (max-width: @xs) {
+        padding-top: 26px;
+    }
+}
+
+
+.video-section {
+    padding-top: 84px;
+    margin-bottom: -40px;
+    padding-bottom: 224px;
+    background-image: url('../../img/video-bg.png');
+    background-position: center top -20px;
+    background-repeat: no-repeat;
+
+    .video-card {
+        margin-bottom: 40px;
+
+        @media screen and (max-width: @xs) {
+            margin-bottom: 26px;
+        }
+    }
+
+    &__more {
+        color: @lightColor;
+        text-align: center;
+        font-size: @prelargeSize;
+        margin-top: 40px;
+        margin-bottom: 24px;
+
+        @media screen and (max-width: @xs) {
+            margin-top: 29px;
+        }
+    }
+
+    .button {
+        max-width: 210px;
+        margin: 0 auto;
+    }
+
+    @media screen and (max-width: @xs) {
+        padding-bottom: 208px;
+        background-image: url('../../img/video-bg-mobile.png');
+        background-position: center bottom 50px;
+    }
+
+}
+
+.advantages-offer-wrap {
+    background-image: url('../../img/3.png');
+    background-position: center top -340px;
+    background-repeat: no-repeat;
+}
+
+.advantages-section {
+    padding-bottom: 184px;
+    .title {
+        margin-bottom: 85px;
+
+        span {
+            @media screen and (max-width: @xs) {
+                display: none;
+            }
+        }
+    }
+
+    @media screen and (max-width: @xs) {
+        padding-bottom: 150px;
+    }
+}
+
+
+.offer-section {
+    padding-bottom: 401px;
+    .title {
+        margin-bottom: 42px;
+
+        @media screen and (max-width: @container) {
+            margin-bottom: 86px;
+        }
+    }
+
+    &__sub-title {
+        font-size: @basicSize;
+        color: @lightColor;
+        letter-spacing: 5px;
+        text-align: center;
+        margin-bottom: 60px;
+
+        @media screen and (max-width: @xs) {
+            letter-spacing: unset;
+            margin-bottom: 40px;
+        }
+    }
+
+    &__container {
+        max-width: 1054px;
+    }
+
+    &__type-card {
+        height: 368px;
+        background: radial-gradient(111.14% 111.14% at 8.37% 0%, #181E44 0%, rgba(24, 30, 68, 0) 100%);
+        border: 1px solid rgba(73, 92, 160, 0.15);
+        backdrop-filter: blur(100px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 30px;
+        padding-top: 2px;
+
+        @media screen and (max-width: 1200px) {
+            margin-bottom: 24px;
+        }
+
+        @media screen and (max-width: @xs) {
+            height: 254px;
+        } 
+    }
+
+    &__type-card:hover > &__type-card-other {
+        color: @defaultColor;
+    }
+
+    &__type-card-logo {
+        @media screen and (max-width: @xs) {
+            width: 158px;
+            height: 127px;
+        }
+    }
+
+    &__type-card-other {
+        text-align: center;
+        font-weight: @fwB;
+        font-size: 28px;
+        transition: @defaultTransition;
+        text-transform: uppercase;
+
+        @media screen and (max-width: @xs) {
+            font-size: 24px;
+        }
+    }
+
+    &__button {
+        max-width: 272px;
+        margin: 0 auto;
+
+        @media screen and (max-width: @xs) {
+            max-width: none;
+        }
+    }
+
+    .tabs {
+        margin-bottom: 56px;
+    }
+}

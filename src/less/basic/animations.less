@@ -1,0 +1,27 @@
+.blur-in {
+    animation: blur-in .5s forwards;
+}
+
+.blur-out {
+    animation: blur-out .5s forwards;
+}
+
+@keyframes blur-in {
+    0% {
+        filter: blur(0px);
+    }
+
+    100% {
+        filter: blur(20px);
+    }
+}
+
+@keyframes blur-out {
+    0% {
+        filter: blur(20px);
+    }
+
+    100% {
+        filter: blur(0px);
+    }
+}

@@ -1,0 +1,64 @@
+.button {
+    width: 100%;
+    height: 48px;
+    border-radius: 24px;
+    font-size: @basicSize;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 210px;
+    transition: @defaultTransition;
+    
+    &--offer {
+        color: @lightColor;
+        border: 2px solid @defaultColor;
+        
+
+        &:hover {
+            color: @defaultColor;
+            background-color: @lightColor;
+            border: 2px solid @lightColor
+        }
+    }
+
+    &--offer-active {
+        color: @defaultColor;
+        background-color: @lightColor;
+        border: 2px solid @lightColor;
+    }
+
+    &--red {
+        color: @lightColor;
+        border: 2px solid @attentionColor;
+
+        &:hover {
+            background-color: @attentionColor;
+        }
+
+        &:hover .button__icon {
+            fill: @lightColor;
+        }
+
+        .button__icon {
+            fill: @attentionColor;
+        }
+    }
+
+    &--buy {
+        color: @lightColor;
+        border: 2px solid @defaultColor;
+        
+
+        &:hover {
+            background-color: @defaultColor;
+            box-shadow: 0px 22px 87px rgba(0, 139, 250, 0.52), 0px 2.75474px 10.8938px rgba(0, 139, 250, 0.369515), inset 0px -5px 5px rgba(255, 255, 255, 0.3);
+        }
+    }
+
+    &__icon {
+        width: 16px;
+        height: 14px;
+        margin-right: 9px;
+        transition: @defaultTransition;
+    }
+}

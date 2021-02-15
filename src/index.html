@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vilonity</title>
+    <link
+        rel="preload"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&display=swap"
+        as="style"
+        onload="this.onload=null;this.rel='stylesheet'"
+    />
+</head>
+<body>
+    <div class="back-wrapper">
+        <main class="main">
+            <div class="main__shadow">
+
+            </div>
+            <div class="header-info-wrap">
+                <header class="header">
+                    <div class="container">
+                        <div class="nav nav-mobile">
+                            <div class="nav-mobile__burger">
+                                <div class="nav-mobile__burger-line"></div>
+                                <div class="nav-mobile__burger-line"></div>
+                                <div class="nav-mobile__burger-line"></div>
+                            </div>
+                            <div class="nav-mobile__menu">
+                                <div class="nav-mobile__menu-top">
+                                    <svg class="nav-mobile__close">
+                                        <use xlink:href="#x" />
+                                    </svg>
+                                    <a href="index.html" class="logo">
+                                        <img src="img/logo.png" alt="logotype" class="logo__image">
+                                    </a>
+                                </div>
+                                <div class="nav-mobile__menu-bottom">
+                                    <div class="nav-mobile__menu-content">
+                                        <a href="#" class="nav__link">
+                                            Главная
+                                        </a>
+                                        <a href="#" class="nav__link">
+                                            Преимущества
+                                        </a>
+                                        <a href="#" class="nav__link">
+                                            Приобрести
+                                        </a>
+                                    </div>
+                                    <div class="nav-mobile__menu-content">
+                                        <div class="social-media">
+                                            <a href="" class="social-media__link">
+                                                <svg class="social-media__icon">
+                                                    <use xlink:href="#vk" />
+                                                </svg>
+                                            </a>
+                                            <a href="" class="social-media__link">
+                                                <svg class="social-media__icon">
+                                                    <use xlink:href="#disk" />
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <div class="lang-switch">
+                                            <div class="lang-switch__button">
+                                                RU
+                                            </div>
+                                            <ul class="lang-switch__languages">
+                                                <li class="lang-switch__lang-item">
+                                                    RU
+                                                </li>
+                                                <li class="lang-switch__lang-item">
+                                                    EN
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <nav class="nav">
+                            <a href="#" class="nav__link">
+                                Главная
+                            </a>
+                            <a href="#" class="nav__link">
+                                Преимущества
+                            </a>
+                        </nav>
+                        <div class="lang-switch">
+                            <div class="lang-switch__button">
+                                RU
+                            </div>
+                            <ul class="lang-switch__languages">
+                                <li class="lang-switch__lang-item">
+                                    RU
+                                </li>
+                                <li class="lang-switch__lang-item">
+                                    EN
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="social-media">
+                            <a href="" class="social-media__link">
+                                <svg class="social-media__icon">
+                                    <use xlink:href="#vk" />
+                                </svg>
+                            </a>
+                            <a href="" class="social-media__link">
+                                <svg class="social-media__icon">
+                                    <use xlink:href="#disk" />
+                                </svg>
+                            </a>
+                        </div>
+                        <a href="index.html" class="logo">
+                            <img src="img/logo.png" alt="logotype" class="logo__image">
+                        </a>
+                        <div class="header__button">
+                            <a href="" class="button button--buy">
+                                <svg class="button__icon">
+                                    <use xlink:href="#bag" />
+                                </svg>
+                                Приобрести
+                            </a>
+                        </div>
+                    </div>
+                </header>
+                <div class="info-section">
+                    <div class="container">
+                        <div class="info-section__details">
+                            <h1 class="info-section__title">
+                                Vilonity
+                            </h1>
+                            <h3 class="info-section__sub-title">
+                                Макросы для Rust
+                            </h3>
+                            <p class="info-section__description">
+                                Работают на любой чувствительности, вам не прийдётся <br />
+                                контролировать отдачу мы сделаем это за вас. Простая <br />
+                                настройка и установка. С Vilonity ваша игра станет ярче.
+                            </p>
+                            <div class="info-section__buttons">
+                                <a href="" class="button button--offer">
+                                    Узнать подробнее
+                                </a>
+                                <a href="" class="button button--offer" id="try-free">
+                                    Попробовать бесплатно
+                                </a>
+                            </div>
+                        </div>
+                        <div class="info-section__solders">
+                            <img src="img/solders.png" alt="solders">
+                            <img src="img/radius.png" alt="radius">
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="title">
+                            <h2 class="title__primary">
+                                Видеообзоры
+                            </h2>
+                            <h3 class="title__back">
+                                Видеообзоры
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="video-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-4 col-md-6">
+                            <div class="video-card" data-src="https://www.youtube.com/embed/ZN9GlZpr1fU">
+                                <svg class="video-card__play">
+                                    <use xlink:href="#play" />
+                                </svg>
+                                <img src="https://img.youtube.com/vi/zvWa9Mj-khI/maxresdefault.jpg" alt="preview" class="video-card__preview">
+                                <div class="video-card__info">
+                                    <span class="video-card__info-title">
+                                        Программма с макросами
+                                    </span>
+                                    <span class="video-card__info-time">
+                                        04:20
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-6">
+                            <div class="video-card" data-src="https://www.youtube.com/embed/kcwqnRMvaYs">
+                                <svg class="video-card__play">
+                                    <use xlink:href="#play" />
+                                </svg>
+                                <img src="https://img.youtube.com/vi/zvWa9Mj-khI/maxresdefault.jpg" alt="preview" class="video-card__preview">
+                                <div class="video-card__info">
+                                    <span class="video-card__info-title">
+                                        Программма с макросами
+                                    </span>
+                                    <span class="video-card__info-time">
+                                        04:20
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-6">
+                            <div class="video-card">
+                                <svg class="video-card__play">
+                                    <use xlink:href="#play" />
+                                </svg>
+                                <img src="https://img.youtube.com/vi/zvWa9Mj-khI/maxresdefault.jpg" alt="preview" class="video-card__preview">
+                                <div class="video-card__info">
+                                    <span class="video-card__info-title">
+                                        Программма с макросами
+                                    </span>
+                                    <span class="video-card__info-time">
+                                        04:20
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-6">
+                            <div class="video-card">
+                                <svg class="video-card__play">
+                                    <use xlink:href="#play" />
+                                </svg>
+                                <img src="https://img.youtube.com/vi/zvWa9Mj-khI/maxresdefault.jpg" alt="preview" class="video-card__preview">
+                                <div class="video-card__info">
+                                    <span class="video-card__info-title">
+                                        Программма с макросами
+                                    </span>
+                                    <span class="video-card__info-time">
+                                        04:20
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-6">
+                            <div class="video-card">
+                                <svg class="video-card__play">
+                                    <use xlink:href="#play" />
+                                </svg>
+                                <img src="https://img.youtube.com/vi/zvWa9Mj-khI/maxresdefault.jpg" alt="preview" class="video-card__preview">
+                                <div class="video-card__info">
+                                    <span class="video-card__info-title">
+                                        Программма с макросами
+                                    </span>
+                                    <span class="video-card__info-time">
+                                        04:20
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-6">
+                            <div class="video-card">
+                                <svg class="video-card__play">
+                                    <use xlink:href="#play" />
+                                </svg>
+                                <img src="https://img.youtube.com/vi/zvWa9Mj-khI/maxresdefault.jpg" alt="preview" class="video-card__preview">
+                                <div class="video-card__info">
+                                    <span class="video-card__info-title">
+                                        Программма с макросами
+                                    </span>
+                                    <span class="video-card__info-time">
+                                        04:20
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="video-section__more">
+                        Больше видео на нашем ютуб канале
+                    </div>
+                    <a href="#" class="button button--red">
+                        <svg class="button__icon">
+                            <use xlink:href="#play" />
+                        </svg>
+                        Перейти
+                    </a>
+                </div>
+            </section>
+            <div class="advantages-offer-wrap">
+                <section class="advantages-section">
+                    <div class="container">
+                        <div class="title">
+                            <h2 class="title__primary">
+                                Почему <span>именно</span> мы?
+                            </h2>
+                            <h3 class="title__back">
+                                Почему мы?
+                            </h3>
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-4 col-md-6">
+                                <div class="advantage">
+                                    <svg class="advantage__icon advantage__icon--aim">
+                                        <use xlink:href="#aim" />
+                                    </svg>
+                                    <h4 class="advantage__title">
+                                        Точность
+                                    </h4>
+                                    <p class="advantage__description">
+                                        Наши макросы работают на любом <br />
+                                        разрешении экрана и DPI мыши, <br />
+                                        доведены до идеала лучше вы уже <br />
+                                        просто не найдёте.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-md-6">
+                                <div class="advantage">
+                                    <svg class="advantage__icon advantage__icon--lock">
+                                        <use xlink:href="#lock" />
+                                    </svg>
+                                    <h4 class="advantage__title">
+                                        Без блокировки
+                                    </h4>
+                                    <p class="advantage__description">
+                                        За всё время существования наших <br />
+                                        макросов не было зафиксировано <br />
+                                        не одной блокировки аккаунта.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-md-6">
+                                <div class="advantage">
+                                    <svg class="advantage__icon advantage__icon--phone">
+                                        <use xlink:href="#phone" />
+                                    </svg>
+                                    <h4 class="advantage__title">
+                                        Поддержка
+                                    </h4>
+                                    <p class="advantage__description">
+                                        Наша техническая поддержка <br />
+                                        способна помочь вам в любой <br />
+                                        ситуации, какой бы трудной <br />
+                                        она не была
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="offer-section">
+                    <div class="container">
+                        <div class="title">
+                            <h2 class="title__primary">
+                                Купить
+                            </h2>
+                            <h3 class="title__back">
+                                Купить
+                            </h3>
+                        </div>
+                        <div class="offer-section__sub-title">
+                            Выберите модель вашей мыши
+                        </div>
+                    </div>
+                    <div class="container offer-section__container">
+                        <div class="row">
+                            <div class="col-xl-4 col-md-6">
+                                <a href="#" class="offer-section__type-card" data-category="logitech">
+                                    <img src="img/logitech.png" alt="logitech logo" class="offer-section__type-card-logo">
+                                </a>
+                            </div>
+                            <div class="col-xl-4 col-md-6">
+                                <a href="#" class="offer-section__type-card" data-category="othermouse">
+                                    <span class="offer-section__type-card-other">
+                                        Другая
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="col-xl-4 col-md-6">
+                                <a href="#" class="offer-section__type-card" data-category="all">
+                                    <span class="offer-section__type-card-other">
+                                        Показать <br />
+                                        все товары
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="tabs">
+                            <div class="tabs__buttons-container">
+                                <div class="tab-button" data-category="all">
+                                    <div class="button button--offer">
+                                        Все товары
+                                    </div>
+                                </div>
+                                <div class="tab-button"  data-category="othermouse">
+                                    <div class="button button--offer">
+                                        Макросы для любой мыши
+                                    </div>
+                                </div>
+                                <div class="tab-button"  data-category="logitech">
+                                    <div class="button button--offer">
+                                        Макросы для Logitech
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tabs__content">
+                                <div class="tab-container">
+                                    <div class="row">
+                                        <div class="col-xl-3 col-md-4 col-sm-6" data-item="logitech">
+                                            <div class="item-card">
+                                                <div class="item-card__logitech">
+                                                    <svg class="item-card__logitech-icon">
+                                                        <use xlink:href="#logitech" />
+                                                    </svg>
+                                                    <span class="item-card__logitech-abbr">
+                                                        Для мышек Logitech
+                                                    </span>
+                                                </div>
+                                                <h4 class="item-card__title">
+                                                    Программа
+                                                    с макросами
+                                                </h4>
+                                                <ul class="item-card__pluses">
+                                                    <li class="item-card__plus-item">
+                                                        <svg class="item-card__check">
+                                                            <use xlink:href="#check" />
+                                                        </svg>
+                                                        Подойдёт для любой мыши
+                                                    </li>
+                                                    <li class="item-card__plus-item">
+                                                        <svg class="item-card__check">
+                                                            <use xlink:href="#check" />
+                                                        </svg>
+                                                        Есть макросы на все оружия
+                                                    </li>
+                                                    <li class="item-card__plus-item">
+                                                        <svg class="item-card__check">
+                                                            <use xlink:href="#check" />
+                                                        </svg>
+                                                        Получение неоспоримого
+                                                        преимущества
+                                                    </li>
+                                                </ul>
+                                                <div class="item-card__price">
+                                                    <span class="item-card__discount">
+                                                        -25%
+                                                    </span>
+                                                    <div class="item-card__full-price">
+                                                        249 Р<span>/7 дней</span>
+                                                    </div>
+                                                </div>
+                                                <a href="#" class="button button--buy">
+                                                    Подробнее
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-md-4 col-sm-6" data-item="othermouse">
+                                            <div class="item-card">
+                                                <h4 class="item-card__title">
+                                                    Программа
+                                                    с макросами
+                                                </h4>
+                                                <ul class="item-card__pluses">
+                                                    <li class="item-card__plus-item">
+                                                        <svg class="item-card__check">
+                                                            <use xlink:href="#check" />
+                                                        </svg>
+                                                        Подойдёт для любой мыши
+                                                    </li>
+                                                    <li class="item-card__plus-item">
+                                                        <svg class="item-card__check">
+                                                            <use xlink:href="#check" />
+                                                        </svg>
+                                                        Есть макросы на все оружия
+                                                    </li>
+                                                    <li class="item-card__plus-item">
+                                                        <svg class="item-card__check">
+                                                            <use xlink:href="#check" />
+                                                        </svg>
+                                                        Получение неоспоримого
+                                                        преимущества
+                                                    </li>
+                                                </ul>
+                                                <div class="item-card__price">
+                                                    <span class="item-card__discount">
+                                                        -25%
+                                                    </span>
+                                                    <div class="item-card__full-price">
+                                                        249 Р<span>/7 дней</span>
+                                                    </div>
+                                                </div>
+                                                <a href="#" class="button button--buy">
+                                                    Подробнее
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-md-4 col-sm-6" data-item="logitech">
+                                            <div class="item-card">
+                                                <div class="item-card__logitech">
+                                                    <svg class="item-card__logitech-icon">
+                                                        <use xlink:href="#logitech" />
+                                                    </svg>
+                                                    <span class="item-card__logitech-abbr">
+                                                        Для мышек Logitech
+                                                    </span>
+                                                </div>
+                                                <h4 class="item-card__title">
+                                                    Программа
+                                                    с макросами
+                                                </h4>
+                                                <ul class="item-card__pluses">
+                                                    <li class="item-card__plus-item">
+                                                        <svg class="item-card__check">
+                                                            <use xlink:href="#check" />
+                                                        </svg>
+                                                        Подойдёт для любой мыши
+                                                    </li>
+                                                    <li class="item-card__plus-item">
+                                                        <svg class="item-card__check">
+                                                            <use xlink:href="#check" />
+                                                        </svg>
+                                                        Есть макросы на все оружия
+                                                    </li>
+                                                    <li class="item-card__plus-item">
+                                                        <svg class="item-card__check">
+                                                            <use xlink:href="#check" />
+                                                        </svg>
+                                                        Получение неоспоримого
+                                                        преимущества
+                                                    </li>
+                                                </ul>
+                                                <div class="item-card__price">
+                                                    <span class="item-card__discount">
+                                                        -25%
+                                                    </span>
+                                                    <div class="item-card__full-price">
+                                                        249 Р<span>/7 дней</span>
+                                                    </div>
+                                                </div>
+                                                <a href="#" class="button button--buy">
+                                                    Подробнее
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-md-4 col-sm-6" data-item="logitech">
+                                            <div class="item-card">
+                                                <div class="item-card__logitech">
+                                                    <svg class="item-card__logitech-icon">
+                                                        <use xlink:href="#logitech" />
+                                                    </svg>
+                                                    <span class="item-card__logitech-abbr">
+                                                        Для мышек Logitech
+                                                    </span>
+                                                </div>
+                                                <h4 class="item-card__title">
+                                                    Программа
+                                                    с макросами
+                                                </h4>
+                                                <ul class="item-card__pluses">
+                                                    <li class="item-card__plus-item">
+                                                        <svg class="item-card__check">
+                                                            <use xlink:href="#check" />
+                                                        </svg>
+                                                        Подойдёт для любой мыши
+                                                    </li>
+                                                    <li class="item-card__plus-item">
+                                                        <svg class="item-card__check">
+                                                            <use xlink:href="#check" />
+                                                        </svg>
+                                                        Есть макросы на все оружия
+                                                    </li>
+                                                    <li class="item-card__plus-item">
+                                                        <svg class="item-card__check">
+                                                            <use xlink:href="#check" />
+                                                        </svg>
+                                                        Получение неоспоримого
+                                                        преимущества
+                                                    </li>
+                                                </ul>
+                                                <div class="item-card__price">
+                                                    <span class="item-card__discount">
+                                                        -25%
+                                                    </span>
+                                                    <div class="item-card__full-price">
+                                                        249 Р<span>/7 дней</span>
+                                                    </div>
+                                                </div>
+                                                <a href="#" class="button button--buy">
+                                                    Подробнее
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-md-4 col-sm-6" data-item="logitech">
+                                            <div class="item-card">
+                                                <div class="item-card__logitech">
+                                                    <svg class="item-card__logitech-icon">
+                                                        <use xlink:href="#logitech" />
+                                                    </svg>
+                                                    <span class="item-card__logitech-abbr">
+                                                        Для мышек Logitech
+                                                    </span>
+                                                </div>
+                                                <h4 class="item-card__title">
+                                                    Программа
+                                                    с макросами
+                                                </h4>
+                                                <ul class="item-card__pluses">
+                                                    <li class="item-card__plus-item">
+                                                        <svg class="item-card__check">
+                                                            <use xlink:href="#check" />
+                                                        </svg>
+                                                        Подойдёт для любой мыши
+                                                    </li>
+                                                    <li class="item-card__plus-item">
+                                                        <svg class="item-card__check">
+                                                            <use xlink:href="#check" />
+                                                        </svg>
+                                                        Есть макросы на все оружия
+                                                    </li>
+                                                    <li class="item-card__plus-item">
+                                                        <svg class="item-card__check">
+                                                            <use xlink:href="#check" />
+                                                        </svg>
+                                                        Получение неоспоримого
+                                                        преимущества
+                                                    </li>
+                                                </ul>
+                                                <div class="item-card__price">
+                                                    <span class="item-card__discount">
+                                                        -25%
+                                                    </span>
+                                                    <div class="item-card__full-price">
+                                                        249 Р<span>/7 дней</span>
+                                                    </div>
+                                                </div>
+                                                <a href="#" class="button button--buy">
+                                                    Подробнее
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-md-4 col-sm-6" data-item="othermouse">
+                                            <div class="item-card">
+                                                <h4 class="item-card__title">
+                                                    Программа
+                                                    с макросами
+                                                </h4>
+                                                <ul class="item-card__pluses">
+                                                    <li class="item-card__plus-item">
+                                                        <svg class="item-card__check">
+                                                            <use xlink:href="#check" />
+                                                        </svg>
+                                                        Подойдёт для любой мыши
+                                                    </li>
+                                                    <li class="item-card__plus-item">
+                                                        <svg class="item-card__check">
+                                                            <use xlink:href="#check" />
+                                                        </svg>
+                                                        Есть макросы на все оружия
+                                                    </li>
+                                                    <li class="item-card__plus-item">
+                                                        <svg class="item-card__check">
+                                                            <use xlink:href="#check" />
+                                                        </svg>
+                                                        Получение неоспоримого
+                                                        преимущества
+                                                    </li>
+                                                </ul>
+                                                <div class="item-card__price">
+                                                    <span class="item-card__discount">
+                                                        -25%
+                                                    </span>
+                                                    <div class="item-card__full-price">
+                                                        249 Р<span>/7 дней</span>
+                                                    </div>
+                                                </div>
+                                                <a href="#" class="button button--buy">
+                                                    Подробнее
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-md-4 col-sm-6" data-item="logitech">
+                                            <div class="item-card">
+                                                <div class="item-card__logitech">
+                                                    <svg class="item-card__logitech-icon">
+                                                        <use xlink:href="#logitech" />
+                                                    </svg>
+                                                    <span class="item-card__logitech-abbr">
+                                                        Для мышек Logitech
+                                                    </span>
+                                                </div>
+                                                <h4 class="item-card__title">
+                                                    Программа
+                                                    с макросами
+                                                </h4>
+                                                <ul class="item-card__pluses">
+                                                    <li class="item-card__plus-item">
+                                                        <svg class="item-card__check">
+                                                            <use xlink:href="#check" />
+                                                        </svg>
+                                                        Подойдёт для любой мыши
+                                                    </li>
+                                                    <li class="item-card__plus-item">
+                                                        <svg class="item-card__check">
+                                                            <use xlink:href="#check" />
+                                                        </svg>
+                                                        Есть макросы на все оружия
+                                                    </li>
+                                                    <li class="item-card__plus-item">
+                                                        <svg class="item-card__check">
+                                                            <use xlink:href="#check" />
+                                                        </svg>
+                                                        Получение неоспоримого
+                                                        преимущества
+                                                    </li>
+                                                </ul>
+                                                <div class="item-card__price">
+                                                    <span class="item-card__discount">
+                                                        -25%
+                                                    </span>
+                                                    <div class="item-card__full-price">
+                                                        249 Р<span>/7 дней</span>
+                                                    </div>
+                                                </div>
+                                                <a href="#" class="button button--buy">
+                                                    Подробнее
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-md-4 col-sm-6" data-item="logitech">
+                                            <div class="item-card">
+                                                <div class="item-card__logitech">
+                                                    <svg class="item-card__logitech-icon">
+                                                        <use xlink:href="#logitech" />
+                                                    </svg>
+                                                    <span class="item-card__logitech-abbr">
+                                                        Для мышек Logitech
+                                                    </span>
+                                                </div>
+                                                <h4 class="item-card__title">
+                                                    Программа
+                                                    с макросами
+                                                </h4>
+                                                <ul class="item-card__pluses">
+                                                    <li class="item-card__plus-item">
+                                                        <svg class="item-card__check">
+                                                            <use xlink:href="#check" />
+                                                        </svg>
+                                                        Подойдёт для любой мыши
+                                                    </li>
+                                                    <li class="item-card__plus-item">
+                                                        <svg class="item-card__check">
+                                                            <use xlink:href="#check" />
+                                                        </svg>
+                                                        Есть макросы на все оружия
+                                                    </li>
+                                                    <li class="item-card__plus-item">
+                                                        <svg class="item-card__check">
+                                                            <use xlink:href="#check" />
+                                                        </svg>
+                                                        Получение неоспоримого
+                                                        преимущества
+                                                    </li>
+                                                </ul>
+                                                <div class="item-card__price">
+                                                    <span class="item-card__discount">
+                                                        -25%
+                                                    </span>
+                                                    <div class="item-card__full-price">
+                                                        249 Р<span>/7 дней</span>
+                                                    </div>
+                                                </div>
+                                                <a href="#" class="button button--buy">
+                                                    Подробнее
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="button button--offer offer-section__button">
+                            Больше товаров
+                        </a>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer__top">
+                <div class="container">
+                    <div class="footer__content">
+                        <a href="index.html" class="logo logo--text">
+                            <img src="img/logo-mini.png" alt="logotype" class="logo__image">
+                            <span class="logo__text">
+                                Vilonity
+                            </span>
+                        </a>
+                        <p class="footer__description">
+                            Всякое крутецкое описание <br />
+                            вашего продукта и всякое такое
+                        </p>
+                    </div>
+                    <div class="footer__content">
+                        <nav class="footer__navigation">
+                            <a href="#" class="footer__link">
+                                Обратиться в поддержку
+                            </a>
+                            <a href="#" class="footer__link">
+                                Пользовательское соглашение
+                            </a>
+                        </nav>
+                        <nav class="footer__navigation">
+                            <a href="#" class="footer__link">
+                                Политика конфиденциальности
+                            </a>
+                            <a href="#" class="footer__link">
+                                Обработка данных
+                            </a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                Copyright © 2018-2021 vilonity.com . Все права сохранены
+            </div>
+            </div>
+        </footer>
+    </div>
+    <div class="white-popup mfp-hide popup" id="popup">
+        <svg class="popup__close">
+            <use xlink:href="#x" />
+        </svg>
+        <h2 class="popup__title">
+            Попробовать бесплатно
+        </h2>
+        <div class="popup__content">
+            <p class="popup__description">
+                Мы предоставляем пробный период всем желающим <br />
+                пользователям, только так каждый из вас сможет <br />
+                проверить качество нашего продукта. <br />
+            </p>
+            <p class=" popup__description popup__description--white">
+                Несколько простых действий и пробный период ваш!
+            </p>
+            <p class="popup__description">
+                Напишите нам в группу <span>"Попробовать бесплатно"</span> <br />
+                и получите промокод на 24 часа.
+            </p>
+        </div>
+        <a href="#" class="button button--offer popup__button">
+            Написать нам
+        </a>
+    </div>
+    <div class="white-popup mfp-hide popup" id="video-popup">
+        <svg class="popup__close">
+            <use xlink:href="#x" />
+        </svg>
+        <iframe 
+            src=""
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+        >
+        </iframe>
+    </div>
+    <div class="close-overlay"></div>
+</body>
+</html>

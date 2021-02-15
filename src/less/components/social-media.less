@@ -1,0 +1,20 @@
+.social-media {
+    display: flex;
+
+    &__link {
+        &:not(:first-child) {
+            margin-left: 25px;
+        }
+    }
+
+    &__icon {
+        width: 24px;
+        height: 24px;
+        transition: @defaultTransition;
+        fill: @unactiveColor;
+
+        &:hover {
+            fill: @lightColor;
+        }
+    }
+}

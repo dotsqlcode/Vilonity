@@ -1,0 +1,30 @@
+.tabs {
+    &__buttons-container {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 60px;
+        margin-top: -27px;
+
+        .tab-button {
+            &:nth-child(2) {
+                margin: 0 30px;
+
+                @media screen and (max-width: 928px) {
+                    margin: 20px 0;
+                }
+            }
+
+            .button {
+                @media screen and (max-width: @xs) {
+                    padding: 0 6px;
+                }
+            }
+        }
+
+
+
+        @media screen and (max-width: 928px) {
+            flex-direction: column;
+        }
+    }
+}

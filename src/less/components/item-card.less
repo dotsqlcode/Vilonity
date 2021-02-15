@@ -1,0 +1,131 @@
+.item-card {
+    background: radial-gradient(111.14% 111.14% at 8.37% 0%, #181E44 0%, rgba(24, 30, 68, 0.2) 100%), url('../../img/mask.png');
+    background-size: cover, cover;
+    background-repeat: no-repeat, no-repeat;
+    border-radius: 30px;
+    padding: 48px 31px;
+    padding-left: 42px;
+    position: relative;
+
+    &__logitech {
+        position: absolute;
+        right: 32px;
+        top: 32px;
+    }
+
+    &__logitech-icon {
+        width: 52px;
+        height: 16px;
+        fill: @defaultColor;
+        transition: @defaultTransition;
+        position: relative;
+
+        &:hover {
+            fill: @lightColor;
+        }
+    }
+
+    &__logitech-icon:hover + &__logitech-abbr {
+        opacity: 1;
+    }
+
+    &__logitech-abbr {
+        opacity: 0;
+        transition: @defaultTransition;
+        display: block;
+        position: absolute;
+        padding: 12px 30px;
+        background: radial-gradient(111.14% 111.14% at 8.37% 0%, #181E44 0%, rgba(24, 30, 68, 0) 100%);
+        filter: drop-shadow(7px 7px 10px rgba(18, 22, 56, 0.24));
+        font-size: 14px;
+        color: @unactiveColor;
+        top: 0;
+        left: 50%;
+        transform: translate(-66%, -126%);
+        border: 1px solid rgba(73,92,160,.15);
+        min-width: 216px;
+        text-align: center;
+        border-radius: 16px;
+    }
+
+    &__title {
+        color: @lightColor;
+        font-size: 32px;
+        font-weight: @fwB;
+        line-height: 42px;
+        margin-bottom: 33px;
+
+        @media screen and (max-width: 360px) {
+            font-size: 24px;
+            margin-bottom: 24px;
+            line-height: 36px;
+        }
+    }
+
+    &__pluses {
+        list-style: none;
+        margin-bottom: 34px;
+
+        @media screen and (max-width: 360px) {
+            margin-bottom: 32px;
+        }
+    }
+
+    &__plus-item {
+        display: flex;
+        color: @unactiveColor;
+        font-size: 14px;
+        margin-bottom: 16px;
+        line-height: 21px;
+    }
+
+    &__check {
+        width: 20px;
+        height: 20px;
+        margin-right: 12px;
+        flex-shrink: 0;
+    }
+
+    &__discount {
+        display: block;
+        padding: 2px 6px;
+        border-radius: 5px;
+        background: rgba(255, 72, 72, 0.1);
+        color: @attentionColor;
+        font-size: @basicSize;
+        max-width: 51px;
+        margin-left: 6px;
+    }
+
+    &__price {
+        display: flex;
+        align-items: center;
+        margin-bottom: 32px;
+    }
+
+    &__full-price {
+        color: @defaultColor;
+        font-size: 36px;
+        margin-left: 11px;
+
+        span {
+            font-weight: 500;
+            color: @lightColor;
+            font-size: 17px;
+            margin-left: 4px;
+        }
+    }
+
+    .button {
+        max-width: 248px;
+
+        @media screen and (max-width: @xs) {
+            max-width: none;
+        }
+    }
+
+
+    @media screen and (max-width: 360px) {
+        padding: 28px 20px 28px 20px
+    }
+}

@@ -1,0 +1,91 @@
+.video-card {
+    height: 302px;
+    border-radius: 30px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(73, 92, 160, 0.15);
+    cursor: pointer;
+    transition: @defaultTransition;
+
+    &:hover {
+        border: 1px solid @defaultColor;
+    }
+
+    &__preview {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 130%;
+        filter: blur(10px);
+        // opacity: .40;
+        transition: @defaultTransition;
+        
+    }
+
+    &__play {
+        position: absolute;
+        width: 54px;
+        height: 64px;
+        z-index: 1;
+        left: 50%;
+        top: 50%;
+        transform: translate(-56%,-51%);
+        cursor: pointer;
+        fill: @lightColor;
+        transition: @defaultTransition;
+
+        &:hover {
+            fill: @defaultColor;
+        }
+
+        @media screen and (max-width: @xs) {
+            width: 35px;
+        }
+    }
+
+    &__info {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 118px;
+        background: linear-gradient(1.39deg, #121639 1.19%, rgba(18, 22, 57, 0) 91.02%);
+        border-radius: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding: 0 40px 30px 40px;
+
+        @media screen and (max-width: @xs) {
+            padding: 18px 20px;
+        }
+    }
+
+    &__info-title {
+        font-size: @basicSize;
+        color: @lightColor;
+
+        @media screen and (max-width: @xs) {
+            font-size: 14px;
+        }
+    }
+
+    &__info-time {
+        font-size: @basicSize;
+        color: @unactiveColor;
+
+        @media screen and (max-width: @xs) {
+            font-size: 14px;
+        }
+    }
+
+    @media screen and (max-width: @xs) {
+        height: 202px;
+    }
+}
+
+.video-card:hover > .video-card__play {
+    fill: @defaultColor;
+}

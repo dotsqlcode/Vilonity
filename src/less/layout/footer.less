@@ -1,0 +1,139 @@
+.footer {
+    background: rgba(19, 23, 60, 0.5);
+    border-top: 1px solid #161B46;
+
+    &__top {
+        border-bottom: 1px solid #161B46;
+
+        .container {
+            display: flex;
+
+            @media screen and (max-width: @container) {
+                flex-wrap: wrap;
+            }
+        }
+    }
+
+    &__content {
+        display: flex;
+        align-items: center;
+        width: 50%;
+        padding: 49px 0;
+
+        &:first-child {
+            border-bottom: 1px solid #161B46;
+        }
+
+        &:last-child {
+            padding-left: 80px;
+            border-left: 1px solid #161B46;
+
+            @media screen and (max-width: @container) {
+                border-left: none;
+                padding-left: 0;
+            }
+        }
+
+        @media screen and (max-width: @container) {
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        @media screen and (max-width: @xs) {
+            padding: 40px 0;
+        }
+    }
+
+    .logo {
+        @media screen and (max-width: @container) {
+            margin-bottom: 16px;
+        }
+
+        @media screen and (max-width: @xs) {
+            margin-bottom: 12px;
+        }
+    }
+
+    &__description {
+        color: @lightColor;
+        margin-left: 105px;
+        font-size: @basicSize;
+        color: @unactiveColor;
+        line-height: 24px;
+
+        @media screen and (max-width: @container) {
+            text-align: center;
+            margin-left: 0;
+        }
+
+        @media screen and (max-width: @xs) {
+            font-size: 14px;
+        }
+    }
+
+    &__navigation {
+
+        &:first-child {
+            @media screen and (max-width: @container) {
+                margin-bottom: 20px;
+            }
+
+            @media screen and (max-width: @xs) {
+                margin-bottom: 16px;
+            }
+        }
+
+        &:last-child {
+            margin-left: 27px;
+
+            @media screen and (max-width: @container) {
+                margin-left: 0;
+            }
+        }
+        
+        @media screen and (max-width: @container) {
+            width: 278px;
+        }
+    }
+
+    &__link {
+        font-size: @basicSize;
+        color: @unactiveColor;
+        transition: @defaultTransition;
+
+        &:first-child {
+            margin-bottom: 20px;
+
+            @media screen and (max-width: @xs) {
+                margin-bottom: 16px;
+            }
+        }
+
+        &:hover {
+            color: @lightColor;
+        }
+
+        @media screen and (max-width: @container) {
+            text-align: center;
+        }
+
+        @media screen and (max-width: @xs) {
+            font-size: 14px;
+        }
+
+
+    }
+
+    &__bottom {
+        text-align: center;
+        color: @unactiveColor;
+        font-size: @basicSize;
+        padding: 40px 0;
+
+        @media screen and (max-width: @xs) {
+            font-size: 14px;
+            padding: 22px 31px;
+        }
+    }
+}
